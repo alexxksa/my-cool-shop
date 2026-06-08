@@ -1,0 +1,257 @@
+/* ОБЩИЕ СТИЛИ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* 1. ШАПКА */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-size: 14px;
+}
+
+.main-logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.user-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+/* 2. НАВИГАЦИЯ */
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 0;
+    background-color: #000000;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* 3. ГЛАВНЫЙ БАННЕР */
+.hero-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    margin-bottom: 25px;
+}
+
+.btn-buy {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    padding: 12px 40px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* 4. БРЕНДЫ */
+.brands-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.brand-item {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+/* 5. КАТЕГОРИИ */
+.categories-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.category-card {
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.category-card h2, .category-card .arrow {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+.category-card h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.category-card .arrow {
+    font-size: 13px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* 6. ТОВАРЫ */
+.products-section {
+    padding: 40px;
+}
+
+.products-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.products-tabs .tab {
+    font-size: 14px;
+    font-weight: bold;
+    color: #999999;
+    cursor: pointer;
+}
+
+.products-tabs .tab.active {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-img-wrapper {
+    position: relative;
+    height: 380px;
+    margin-bottom: 15px;
+}
+
+.product-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: #000000;
+    background: rgba(255,255,255,0.7);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.product-card h3 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 7. ПОДВАЛ */
+.site-footer {
+    background-color: #f4f4f4;
+    padding: 50px 40px;
+    margin-top: 60px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-col h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-col a {
+    display: block;
+    text-decoration: none;
+    color: #666666;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
