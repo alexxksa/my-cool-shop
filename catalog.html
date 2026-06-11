@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOL - Каталог товарів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. ШАПКА -->
+    <header class="top-header">
+        <div class="gender-menu">
+            <a href="catalog.html" style="text-decoration:none; color:#000;">Вона</a> | 
+            <a href="catalog.html" style="text-decoration:none; color:#000;">Він</a> | 
+            <a href="catalog.html" style="text-decoration:none; color:#000; font-weight:bold;">Діти</a>
+        </div>
+        <div class="main-logo"><a href="index.html" style="text-decoration:none; color:#000;">COOL</a></div>
+        <div class="user-icons">
+            <span>🔍</span> 
+            <a href="login.html" style="text-decoration:none; color:#000;">👤 Олександра</a> 
+            <span>♡</span> 
+            <a href="checkout.html" style="text-decoration:none; color:#000;">🛒</a>
+        </div>
+    </header>
+
+    <!-- 2. НАВИГАЦИЯ -->
+    <nav class="main-navigation">
+        <a href="catalog.html">Каталог</a>
+        <a href="catalog.html">Новинки</a>
+        <a href="catalog.html">Одяг</a>
+        <a href="catalog.html">Взуття</a>
+        <a href="catalog.html">Аксесуари</a>
+        <a href="catalog.html">Спорт</a>
+        <a href="catalog.html">Преміум</a>
+        <a href="catalog.html">Дім & Лайфстайл</a>
+        <a href="catalog.html">Бренди</a>
+        <a href="catalog.html">Розпродаж</a>
+    </nav>
+
+    <div style="padding: 20px 40px; font-size: 14px; color: #777;">
+        Головна / Дитячий одяг / <span style="color:#000;">Каталог</span>
+    </div>
+
+    <!-- ГЛАВНЫЙ БЛОК КАТАЛОГА -->
+    <main class="catalog-container" style="display: flex; padding: 0 40px; gap: 40px; font-family: Arial, sans-serif;">
+        
+        <!-- БОКОВОЙ ФИЛЬТР -->
+        <aside class="sidebar-filters" style="width: 250px; flex-shrink: 0;">
+            <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 25px;">Фільтри</h2>
+            
+            <div style="border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 15px;">
+                <h4 style="font-size: 14px; font-weight: bold; margin-bottom: 10px;">Колір</h4>
+                <label style="display:block; font-size:14px; margin-bottom:5px;"><input type="checkbox"> Білий</label>
+                <label style="display:block; font-size:14px; margin-bottom:5px;"><input type="checkbox"> Чорний</label>
+                <label style="display:block; font-size:14px; margin-bottom:5px;"><input type="checkbox"> Рожевий</label>
+                <label style="display:block; font-size:14px; margin-bottom:5px;"><input type="checkbox"> Хакі</label>
+            </div>
+
+            <div style="border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 15px;">
+                <h4 style="font-size: 14px; font-weight: bold; margin-bottom: 10px;">Розмір</h4>
+                <label style="display:block; font-size:14px; margin-bottom:5px;"><input type="checkbox"> 92-98 см</label>
+                <label style="display:block; font-size:14px; margin-bottom:5px;"><input type="checkbox"> 104-110 см</label>
+                <label style="display:block; font-size:14px; margin-bottom:5px;"><input type="checkbox"> 116-122 см</label>
+            </div>
+
+            <div style="border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 15px;">
+                <h4 style="font-size: 14px; font-weight: bold; margin-bottom: 10px;">Ціна</h4>
+                <input type="text" placeholder="від" style="width:70px; padding:5px; font-size:12px;"> - 
+                <input type="text" placeholder="до" style="width:70px; padding:5px; font-size:12px;"> грн
+            </div>
+        </aside>
+
+        <!-- СЕТКА ТОВАРОВ (9 РАЗНЫХ КАРТОЧЕК С НОВЫМИ ФОТО) -->
+        <section class="products-section" style="flex-grow: 1; padding: 0;">
+            <div class="products-grid" style="grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <a href="product.html"><img src="images/prod1.jpg" alt="Товар"></a>
+                        <div class="heart-icon">♡</div>
+                    </div>
+                    <h3>Вишукана біла блуза з мереживними вставками</h3>
+                    <p class="price">785 грн</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/prod2.jpg" alt="Товар">
+                        <div class="heart-icon">♡</div>
+                    </div>
+                    <h3>Стильний костюм для хлопчиків - трійка</h3>
+                    <p class="price">1150 грн</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/prod3.jpg" alt="Товар">
+                        <div class="heart-icon">♡</div>
+                    </div>
+                    <h3>Святкове пишне плаття для дівчинки</h3>
+                    <p class="price">1580 грн</p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/prod4.jpg" alt="Товар">
+                        <div class="heart-icon">♡</div>
+                    </div>
+                    <h3>Стильний однотонний костюм для дітей</h3>
+                    <p class="price">1125 грн</p>
+                </div>
+
+                <!-- Новые уникальные фотки товаров -->
+                <div class="product-card">
+                    <div class="product-img-wrapper"><img src="images/prod5.jpg" alt="Товар"><div class="heart-icon">♡</div></div>
+                    <h3>Теплий повсякденний світшот</h3>
+                    <p class="price">690 грн</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper"><img src="images/prod6.jpg" alt="Товар"><div class="heart-icon">♡</div></div>
+                    <h3>Дитячі трикотажні штани</h3>
+                    <p class="price">520 грн</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper"><img src="images/prod7.jpg" alt="Товар"><div class="heart-icon">♡</div></div>
+                    <h3>В'язаний затишний кардиган</h3>
+                    <p class="price">890 грн</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper"><img src="images/prod8.jpg" alt="Товар"><div class="heart-icon">♡</div></div>
+                    <h3>Джинсова куртка з вишивкою</h3>
+                    <p class="price">1350 грн</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper"><img src="images/cat1.jpg" alt="Товар"><div class="heart-icon">♡</div></div>
+                    <h3>Літня легка сукня</h3>
+                    <p class="price">620 грн</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. ПОДВАЛ -->
+    <footer class="site-footer" style="margin-top: 60px;">
+        <div class="footer-logo">COOL</div>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>Інформація</h4>
+                <a href="delivery.html">Повернення і обмін</a>
+                <a href="#">Програма лояльності</a>
+            </div>
+            <div class="footer-col">
+                <h4>Категорія товарів</h4>
+                <a href="catalog.html">Весь каталог</a>
+                <a href="catalog.html">Новинки</a>
+            </div>
+            <div class="footer-col">
+                <h4>Меню</h4>
+                <a href="delivery.html">Доставка і оплата</a>
+                <a href="blog.html">Блог</a>
+                <a href="about.html">Про нас</a>
+                <a href="contacts.html">Контакти</a>
+            </div>
+            <div class="footer-col">
+                <h4>Ми в соц.мережах</h4>
+                <div class="social-icons">📸 ✈️ 📺 👥</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOL - Вхід та Реєстрація</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. ШАПКА -->
+    <header class="top-header">
+        <div class="gender-menu">
+            <a href="catalog.html" style="text-decoration:none; color:#000;">Вона</a> | 
+            <a href="catalog.html" style="text-decoration:none; color:#000;">Він</a> | 
+            <a href="catalog.html" style="text-decoration:none; color:#000; font-weight:bold;">Діти</a>
+        </div>
+        <div class="main-logo"><a href="index.html" style="text-decoration:none; color:#000;">COOL</a></div>
+        <div class="user-icons">
+            <span>🔍</span> 
+            <a href="login.html" style="text-decoration:none; color:#000; font-weight:bold;">👤 Олександра</a> 
+            <span>♡</span> 
+            <a href="checkout.html" style="text-decoration:none; color:#000;">🛒</a>
+        </div>
+    </header>
+
+    <!-- 2. НАВИГАЦИЯ -->
+    <nav class="main-navigation">
+        <a href="catalog.html">Каталог</a>
+        <a href="catalog.html">Новинки</a>
+        <a href="catalog.html">Одяг</a>
+        <a href="catalog.html">Взуття</a>
+        <a href="catalog.html">Аксесуари</a>
+        <a href="catalog.html">Спорт</a>
+        <a href="catalog.html">Преміум</a>
+        <a href="catalog.html">Дім & Лайфстайл</a>
+        <a href="catalog.html">Бренди</a>
+        <a href="catalog.html">Розпродаж</a>
+    </nav>
+
+    <!-- ГЛАВНЫЙ БЛОК АВТОРИЗАЦИИ -->
+    <main style="max-width: 1000px; margin: 0 auto; padding: 60px 40px; font-family: Arial, sans-serif;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px;">
+            
+            <!-- ЛЕВАЯ КОЛОНКА: ВХОД -->
+            <div>
+                <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 25px; text-transform: uppercase; border-bottom: 1px solid #000; padding-bottom: 10px;">Я маю акаунт</h2>
+                <form style="display: flex; flex-direction: column; gap: 15px;">
+                    <input type="email" value="alexandra@mail.com" style="padding: 12px; border: 1px solid #ddd; font-size: 14px;">
+                    <input type="password" value="password123" style="padding: 12px; border: 1px solid #ddd; font-size: 14px;">
+                    
+                    <div style="display: flex; justify-content: space-between; font-size: 13px; color: #777;">
+                        <label><input type="checkbox" checked> Запам'ятати мене</label>
+                        <a href="#" style="color: #000; text-decoration: none;">Забули пароль?</a>
+                    </div>
+
+                    <!-- Кнопка входа ведет на страницу Личного Кабинета -->
+                    <button type="button" onclick="window.location.href='about.html'" style="background: #000; color: #fff; padding: 12px; border: none; font-size: 15px; font-weight: bold; cursor: pointer; text-transform: uppercase; margin-top: 10px;">
+                        Увійти
+                    </button>
+                </form>
+
+                <!-- Соцсети как на макете -->
+                <div style="margin-top: 30px; text-align: center;">
+                    <p style="font-size: 13px; color: #777; margin-bottom: 15px;">Або увійти через:</p>
+                    <button style="padding: 10px 20px; border: 1px solid #ddd; background: #fff; font-size: 14px; margin-right: 10px; cursor: pointer;">Google</button>
+                    <button style="padding: 10px 20px; border: 1px solid #ddd; background: #fff; font-size: 14px; cursor: pointer;">Facebook</button>
+                </div>
+            </div>
+
+            <!-- ПРАВАЯ КОЛОНКА: РЕГИСТРАЦИЯ -->
+            <div>
+                <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 25px; text-transform: uppercase; border-bottom: 1px solid #ddd; padding-bottom: 10px; color: #555;">Я не маю акаунту</h2>
+                <form style="display: flex; flex-direction: column; gap: 15px;">
+                    <input type="text" placeholder="Ім'я" value="Олександра" style="padding: 12px; border: 1px solid #ddd; font-size: 14px;">
+                    <input type="text" placeholder="Прізвище" style="padding: 12px; border: 1px solid #ddd; font-size: 14px;">
+                    <input type="text" placeholder="Телефон (+380)" style="padding: 12px; border: 1px solid #ddd; font-size: 14px;">
+                    <input type="email" placeholder="Електронна пошта" style="padding: 12px; border: 1px solid #ddd; font-size: 14px;">
+                    <input type="password" placeholder="Пароль" style="padding: 12px; border: 1px solid #ddd; font-size: 14px;">
+                    <input type="password" placeholder="Повторіть пароль" style="padding: 12px; border: 1px solid #ddd; font-size: 14px;">
+
+                    <button type="button" style="background: #fff; color: #000; border: 1px solid #000; padding: 12px; font-size: 15px; font-weight: bold; cursor: pointer; text-transform: uppercase; margin-top: 10px;">
+                        Створити акаунт
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 7. ПОДВАЛ -->
+    <footer class="site-footer">
+        <div class="footer-logo">COOL</div>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>Інформація</h4>
+                <a href="delivery.html">Повернення і обмін</a>
+                <a href="#">Програма лояльності</a>
+            </div>
+            <div class="footer-col">
+                <h4>Категорія товарів</h4>
+                <a href="catalog.html">Весь каталог</a>
+                <a href="catalog.html">Новинки</a>
+            </div>
+            <div class="footer-col">
+                <h4>Меню</h4>
+                <a href="delivery.html">Доставка і оплата</a>
+                <a href="blog.html">Блог</a>
+                <a href="about.html">Про нас</a>
+                <a href="contacts.html">Контакти</a>
+            </div>
+            <div class="footer-col">
+                <h4>Ми в соц.мережах</h4>
+                <div class="social-icons">📸 ✈️ 📺 👥</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
